@@ -1,0 +1,26 @@
+.about{
+    padding-top: 84px;
+    padding-bottom: 84px;
+    background-color: #ffffff;
+    
+
+    &-title {
+        max-width: 330px;
+        font-family: $secondary-font;
+        @include font(700, 28px, 33px, 0.05em);
+        margin-bottom: 20px;
+        color:$light-theme-font;
+    }
+
+    &-text{
+        @include font(400, 16px, 26px, 0.02em);
+        margin-bottom: 20px;
+        color:$light-theme-second-font; 
+    }
+
+    &-description{
+        @include font(400, 14px, 26px, 0.02em);
+        margin-bottom: 40px;
+        color: $light-theme-second-font;
+    }
+}

@@ -1,0 +1,14 @@
+.header {
+    position:absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+}
+
+.menu-btn {
+    display: inline-block;
+    border:none;
+    background-color: transparent;
+    fill: $dark-theme-font; 
+    cursor: pointer;
+ }

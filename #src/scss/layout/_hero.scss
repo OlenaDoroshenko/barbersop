@@ -1,0 +1,30 @@
+.hero {
+    padding-top: 208px;
+    padding-bottom: 182px;
+    
+    background-color: $background-color;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-image: 
+    linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+    url(../img/hero/hero.jpg);
+
+    &-title {
+        margin-bottom: 20px;
+        font-family: $secondary-font;
+       @include font(700, 48px, 56px, 0.05em); 
+       color: $dark-theme-font;
+    }
+
+    &-text {
+        width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        align-self: center;
+        @include font(400, 16px, 26px, 0.02em);
+        color: $dark-theme-second-font;
+      
+    }
+  
+}
