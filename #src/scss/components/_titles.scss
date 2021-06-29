@@ -1,0 +1,36 @@
+.subtitle{
+display: flex;
+
+    &-text {
+        @include font(600, 11px, 15px, 0.01em);
+        text-transform: uppercase;
+        margin-bottom: 20px;}
+
+    &-text--dark{
+        color:$subtitles-font;
+    }
+
+    &-text--light{
+        color: $light-theme-font;
+    }
+}
+
+.subtitle-text--dark::before{
+    display: inline-block;
+    content:"";
+    width: 60px;
+    height: 1px;
+    margin-right: 20px;
+    margin-bottom: 4px;
+    background-color: $subtitles-font; }
+   
+.subtitle-text--light::before{
+    display: inline-block;
+    content:"";
+    width: 60px;
+    height: 1px;
+    margin-right: 20px;
+    margin-bottom: 4px;
+    background-color: $light-theme-font; 
+}
+
