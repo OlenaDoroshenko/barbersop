@@ -1,0 +1,49 @@
+.subtitle{
+display: flex;
+align-items: center;
+justify-content: flex-start;
+margin-bottom: 20px;
+@include font(600, 11px, 15px, 0.1em);
+text-transform: uppercase;
+
+@media screen and (max-width:767px){
+ .photos &{
+    @include font(600, 11px, 21px, 0.1em);
+ }           
+}
+
+.contacts &{
+    color: $dark-theme-font;
+}
+
+    &--dark {
+    color: $subtitles-font;
+
+        &::before{
+            background-color: rgba(157, 164, 189, 0.6);
+        }
+    }
+
+    &--light {
+        color: $light-theme-font;
+    
+        &::before{
+            background-color: $subtitles-font;
+        }
+    }
+
+   .photos & {
+        margin-bottom: 44px;
+
+        
+    }
+
+    &::before{
+        display: inline-block;
+        content:"";
+        width: 60px;
+        height: 1px;
+        margin-right: 20px;
+    }
+
+}

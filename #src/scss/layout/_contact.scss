@@ -1,0 +1,11 @@
+.contact-section-wrapper{
+    @media screen and (min-width:1280px){
+        display: flex;
+        flex-wrap: wrap;
+
+        background-color: $second-bg-color;
+    }
+}
+
+
+
