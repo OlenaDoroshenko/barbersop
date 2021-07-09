@@ -1,6 +1,11 @@
 @mixin font($fw, $fz, $lh, $ls) {
     font-weight: $fw;
     font-size: $fz;
-    line-height: $lh;
+    line-height: $lh/$fz;
     letter-spacing: $ls;
+  }
+
+  @mixin price($l,$w) {
+    left: $l;
+    width: $w;
   }

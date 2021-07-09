@@ -19,14 +19,14 @@ let path={
     html:[source_folder + "/*.html","!" + source_folder + "/_*.html"],
     css:source_folder + "/scss/style.scss",
     js:source_folder + "/js/script.js",
-    img:source_folder + "/img/**/*.{jps,png,svg,gif,ico,webp}",
+    img:source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
     fonts:source_folder + "/fonts/*.ttf",
 },
 watch:{
   html:source_folder + "/**/*.html",
   css:source_folder + "/scss/**/*.scss",
   js:source_folder + "/js/**/*.js",
-  img:source_folder + "/img/**/*.{jps,png,svg,gif,ico,webp}",
+  img:source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
 },
 clean:"./" + project_folder + "/"
 
@@ -196,10 +196,10 @@ function cb(){
     return del(path.clean);
   }
 
-  let build = gulp.series(clean, gulp.parallel(js, css, html, images), browserSync),
-	watch = gulp.parallel(build, watchFiles);
+  let build = gulp.series(clean, gulp.parallel(js, css, html, images));
+	watch = gulp.parallel(build, watchFiles, browserSync);
 
-  // let build = gulp.series(clean, gulp.parallel(js,css,html,images,fonts), fontsStyle);
+  // let build = gulp.series(clean, gulp.parallel(js,css,html,images);
   // let watch=gulp.parallel(build, watchFiles, browserSync);
 
   // exports.fontsStyle = fontsStyle;
